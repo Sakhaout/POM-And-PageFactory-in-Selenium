@@ -1,12 +1,12 @@
 package com.cempro.pages;
 
 import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
@@ -14,11 +14,14 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.crmpro.base.BasePage;
 import com.crmpro.utils.Action;
+import com.crmpro.utils.CommonAction;
 import com.crmpro.utils.TestUtile;
+
 
 public class HomePage extends BasePage{
 	TestUtile testUtile_Obj = new TestUtile();
 	Action action = new Action();
+	CommonAction commonAction_obj = new CommonAction();
 	
 	By allList = By.tagName("a");
 	
@@ -74,24 +77,8 @@ public class HomePage extends BasePage{
 	
 	
 	public void allLink() throws IOException {
-		try {
-			List<WebElement> list = driver.findElements(allList);
-			int link_size = list.size();
-			System.out.println("Total link of the page: "+link_size);
-			
-			List<WebElement>activeLink = new ArrayList<WebElement>();
-			
-			for(int i =0; i<link_size; i++) {
-				if(list.get(i).getAttribute("href")!=null) {
-					activeLink.add(list.get(i));
-				}
-			}
-			System.out.println("Size of active link: "+activeLink.size());
-		}catch(Exception ex) {
-			ex.getStackTrace();
-			testUtile_Obj.takeScreenshot(HomePage.this.toString() + "allListName()");
-		}
-		
+		commonAction_obj.check_Link_connection(allList);
+				
 	}
 	
 	public void logout() {

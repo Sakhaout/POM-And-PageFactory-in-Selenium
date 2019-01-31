@@ -6,10 +6,7 @@
       <class name="com.crmpro.TestCase.HomePageTest">
         <methods>
           <include name="setUp"/>
-          <include name="varifyTable"/>
           <include name="printAllLink"/>
-          <include name="varifyContactLink"/>
-          <include name="varifyLogout"/>
           <include name="closeDown"/>
         </methods>
       </class> <!-- com.crmpro.TestCase.HomePageTest -->

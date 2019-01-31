@@ -20,6 +20,7 @@ public class HomePageTest extends BasePage {
 	
 	private HomePage HomePage_obj;
 	private LogInPage login_obj;
+	private TestUtile testUtile_obj;
 
 
 	public HomePageTest(){
@@ -32,23 +33,37 @@ public class HomePageTest extends BasePage {
 		HomePage_obj = new HomePage();
 		login_obj = new LogInPage();
 		login_obj.logInFunction();
+		driver.switchTo().frame("mainpanel");
+		
 	}
 	
 
 	@Test
 	public void printAllLink() throws IOException, InterruptedException {
 		Thread.sleep(5000);
-		HomePage_obj.allListName();
+		HomePage_obj.allLink();
 	}
-	@Test
-	public void varifyUsername() throws IOException {
-		Assert.assertTrue(HomePage_obj.correctUserName());
-	}
+	
 	
 	@Test
 	public void varifyTable() {
 		HomePage_obj.getTable();
 	
+	}
+	
+	@Test
+	public void varifyContactLink() {
+		HomePage_obj.clickOnContactsLink();
+	}
+	
+
+	
+	@Test
+	public void varifyLogout() {
+		HomePage_obj.logout();
+		String ActualURL = driver.getCurrentUrl();
+		String expectedURL = "https://www.crmpro.com/index.html";
+		Assert.assertEquals(ActualURL, expectedURL);
 	}
 	
 	

@@ -94,7 +94,7 @@ public class TestUtile extends BasePage {
 	
 	
 	//this method allow move to between frames in a webpage. 
-	public final void switchTofream(String frameName) {
+	public void switchTofream(String frameName) {
 		driver.switchTo().frame(frameName);
 	}
 	

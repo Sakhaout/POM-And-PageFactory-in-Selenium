@@ -3,12 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crmpro.TestCase.ContactsPageTest">
+      <class name="com.crmpro.TestCase.HomePageTest">
         <methods>
           <include name="setUp"/>
-          <include name="clickOn_NewContuct"/>
+          <include name="varifyTable"/>
+          <include name="printAllLink"/>
+          <include name="varifyContactLink"/>
+          <include name="varifyLogout"/>
+          <include name="closeDown"/>
         </methods>
-      </class> <!-- com.crmpro.TestCase.ContactsPageTest -->
+      </class> <!-- com.crmpro.TestCase.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

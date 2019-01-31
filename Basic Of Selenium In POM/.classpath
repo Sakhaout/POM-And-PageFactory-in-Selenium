@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="testcasae"/>
+	<classpathentry kind="lib" path="C:/Users/Hossain Sakhaout/Desktop/JavaProgram/Selenium_JarFile/Selenium/client-combined-3.141.59.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Hossain Sakhaout/Desktop/JavaProgram/Selenium_JarFile/Selenium/client-combined-3.141.59-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Hossain Sakhaout/Desktop/JavaProgram/Selenium_JarFile/Selenium/libs/byte-buddy-1.8.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Hossain Sakhaout/Desktop/JavaProgram/Selenium_JarFile/Selenium/libs/commons-exec-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Hossain Sakhaout/Desktop/JavaProgram/Selenium_JarFile/Selenium/libs/guava-25.0-jre.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Hossain Sakhaout/Desktop/JavaProgram/Selenium_JarFile/Selenium/libs/okhttp-3.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Hossain Sakhaout/Desktop/JavaProgram/Selenium_JarFile/Selenium/libs/okio-1.14.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Hossain Sakhaout/Desktop/JavaProgram/Selenium_JarFile/Apache_POI/poi-3.16/poi-3.16.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Hossain Sakhaout/Desktop/JavaProgram/Selenium_JarFile/Apache_POI/poi-3.16/poi-examples-3.16.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Hossain Sakhaout/Desktop/JavaProgram/Selenium_JarFile/Apache_POI/poi-3.16/poi-excelant-3.16.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Hossain Sakhaout/Desktop/JavaProgram/Selenium_JarFile/Apache_POI/poi-3.16/poi-ooxml-3.16.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Hossain Sakhaout/Desktop/JavaProgram/Selenium_JarFile/Apache_POI/poi-3.16/poi-ooxml-schemas-3.16.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Hossain Sakhaout/Desktop/JavaProgram/Selenium_JarFile/Apache_POI/poi-3.16/poi-scratchpad-3.16.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Hossain Sakhaout/Desktop/JavaProgram/Selenium_JarFile/Apache_POI/poi-3.16/ooxml-lib/curvesapi-1.04.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Hossain Sakhaout/Desktop/JavaProgram/Selenium_JarFile/Apache_POI/poi-3.16/ooxml-lib/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Hossain Sakhaout/Desktop/JavaProgram/Selenium_JarFile/Apache_POI/commons-io-2.6/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Hossain Sakhaout/Desktop/JavaProgram/Selenium_JarFile/Apache_POI/commons-io-2.6/commons-io-2.6-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Hossain Sakhaout/Desktop/JavaProgram/Selenium_JarFile/Apache_POI/commons-io-2.6/commons-io-2.6-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Hossain Sakhaout/Desktop/JavaProgram/Selenium_JarFile/Apache_POI/commons-io-2.6/commons-io-2.6-tests.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Hossain Sakhaout/Desktop/JavaProgram/Selenium_JarFile/Apache_POI/commons-io-2.6/commons-io-2.6-test-sources.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

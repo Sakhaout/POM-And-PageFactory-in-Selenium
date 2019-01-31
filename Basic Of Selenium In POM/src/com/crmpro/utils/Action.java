@@ -8,9 +8,11 @@ import org.openqa.selenium.support.ui.Select;
 import com.crmpro.base.BasePage;
 
 public class Action extends BasePage {
+	
 	public Action() {
 		super();
 	}
+
 	
 	//This method Perform DoubleClick on an Webelement.
 	public void actionDoubleClick(WebElement webElement) {
@@ -23,7 +25,7 @@ public class Action extends BasePage {
 	public void actionMouseHover(WebElement element) {
 		//First need to creat an object of Actions class.
 		Actions action_obj = new Actions(driver);
-		action_obj.moveToElement(element).perform();
+		action_obj.moveToElement(element).build().perform();
 	}
 	
 	

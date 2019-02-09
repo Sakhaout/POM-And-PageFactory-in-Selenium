@@ -1,197 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="8" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="CRMPRO Test suite" duration-ms="144992" started-at="2019-02-08T21:28:07Z" finished-at="2019-02-08T21:30:32Z">
+  <suite name="Default suite" duration-ms="41896" started-at="2019-02-09T09:39:46Z" finished-at="2019-02-09T09:40:28Z">
     <groups>
     </groups>
-    <test name="CRMPRO testing feature" duration-ms="144992" started-at="2019-02-08T21:28:07Z" finished-at="2019-02-08T21:30:32Z">
-      <class name="com.crmpro.TestCase.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crmpro.TestCase.HomePageTest@1d057a39]" name="setUp" is-config="true" duration-ms="18280" started-at="2019-02-08T21:28:07Z" finished-at="2019-02-08T21:28:25Z">
+    <test name="Default test" duration-ms="41896" started-at="2019-02-09T09:39:46Z" finished-at="2019-02-09T09:40:28Z">
+      <class name="com.crmpro.TestCase.HelpPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crmpro.TestCase.HelpPageTest@4b9e13df]" name="setUp" is-config="true" duration-ms="16924" started-at="2019-02-09T09:39:46Z" finished-at="2019-02-09T09:40:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="printAllLink()[pri:0, instance:com.crmpro.TestCase.HomePageTest@1d057a39]" name="printAllLink" duration-ms="8844" started-at="2019-02-08T21:28:25Z" finished-at="2019-02-08T21:28:34Z">
+        <test-method status="PASS" signature="getLink()[pri:0, instance:com.crmpro.TestCase.HelpPageTest@4b9e13df]" name="getLink" duration-ms="7571" started-at="2019-02-09T09:40:03Z" finished-at="2019-02-09T09:40:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- printAllLink -->
-        <test-method status="PASS" signature="closeDown()[pri:0, instance:com.crmpro.TestCase.HomePageTest@1d057a39]" name="closeDown" is-config="true" duration-ms="260" started-at="2019-02-08T21:28:34Z" finished-at="2019-02-08T21:28:34Z">
+        </test-method> <!-- getLink -->
+        <test-method status="PASS" signature="closeDown()[pri:0, instance:com.crmpro.TestCase.HelpPageTest@4b9e13df]" name="closeDown" is-config="true" duration-ms="923" started-at="2019-02-09T09:40:10Z" finished-at="2019-02-09T09:40:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crmpro.TestCase.HomePageTest@1d057a39]" name="setUp" is-config="true" duration-ms="13464" started-at="2019-02-08T21:28:34Z" finished-at="2019-02-08T21:28:48Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crmpro.TestCase.HelpPageTest@4b9e13df]" name="setUp" is-config="true" duration-ms="13140" started-at="2019-02-09T09:40:11Z" finished-at="2019-02-09T09:40:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="varifyContactLink()[pri:0, instance:com.crmpro.TestCase.HomePageTest@1d057a39]" name="varifyContactLink" duration-ms="1756" started-at="2019-02-08T21:28:48Z" finished-at="2019-02-08T21:28:49Z">
+        <test-method status="PASS" signature="verifyHelpLink()[pri:0, instance:com.crmpro.TestCase.HelpPageTest@4b9e13df]" name="verifyHelpLink" duration-ms="2372" started-at="2019-02-09T09:40:25Z" finished-at="2019-02-09T09:40:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- varifyContactLink -->
-        <test-method status="PASS" signature="closeDown()[pri:0, instance:com.crmpro.TestCase.HomePageTest@1d057a39]" name="closeDown" is-config="true" duration-ms="184" started-at="2019-02-08T21:28:49Z" finished-at="2019-02-08T21:28:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crmpro.TestCase.HomePageTest@1d057a39]" name="setUp" is-config="true" duration-ms="11520" started-at="2019-02-08T21:28:50Z" finished-at="2019-02-08T21:29:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="varifyLogout()[pri:0, instance:com.crmpro.TestCase.HomePageTest@1d057a39]" name="varifyLogout" duration-ms="2184" started-at="2019-02-08T21:29:01Z" finished-at="2019-02-08T21:29:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- varifyLogout -->
-        <test-method status="PASS" signature="closeDown()[pri:0, instance:com.crmpro.TestCase.HomePageTest@1d057a39]" name="closeDown" is-config="true" duration-ms="268" started-at="2019-02-08T21:29:03Z" finished-at="2019-02-08T21:29:04Z">
+        </test-method> <!-- verifyHelpLink -->
+        <test-method status="PASS" signature="closeDown()[pri:0, instance:com.crmpro.TestCase.HelpPageTest@4b9e13df]" name="closeDown" is-config="true" duration-ms="901" started-at="2019-02-09T09:40:27Z" finished-at="2019-02-09T09:40:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crmpro.TestCase.HomePageTest@1d057a39]" name="setUp" is-config="true" duration-ms="15664" started-at="2019-02-08T21:29:04Z" finished-at="2019-02-08T21:29:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="varifyTable()[pri:0, instance:com.crmpro.TestCase.HomePageTest@1d057a39]" name="varifyTable" duration-ms="1476" started-at="2019-02-08T21:29:19Z" finished-at="2019-02-08T21:29:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- varifyTable -->
-        <test-method status="PASS" signature="closeDown()[pri:0, instance:com.crmpro.TestCase.HomePageTest@1d057a39]" name="closeDown" is-config="true" duration-ms="300" started-at="2019-02-08T21:29:21Z" finished-at="2019-02-08T21:29:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDown -->
-      </class> <!-- com.crmpro.TestCase.HomePageTest -->
-      <class name="com.crmpro.TestCase.LogInPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crmpro.TestCase.LogInPageTest@4c70fda8]" name="setUp" is-config="true" duration-ms="8116" started-at="2019-02-08T21:30:13Z" finished-at="2019-02-08T21:30:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="LogInTest()[pri:0, instance:com.crmpro.TestCase.LogInPageTest@4c70fda8]" name="LogInTest" duration-ms="7945" started-at="2019-02-08T21:30:21Z" finished-at="2019-02-08T21:30:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LogInTest -->
-        <test-method status="PASS" signature="closeDown()[pri:0, instance:com.crmpro.TestCase.LogInPageTest@4c70fda8]" name="closeDown" is-config="true" duration-ms="2343" started-at="2019-02-08T21:30:29Z" finished-at="2019-02-08T21:30:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDown -->
-      </class> <!-- com.crmpro.TestCase.LogInPageTest -->
-      <class name="com.crmpro.TestCase.ContactsPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crmpro.TestCase.ContactsPageTest@26be92ad]" name="setUp" is-config="true" duration-ms="17964" started-at="2019-02-08T21:29:21Z" finished-at="2019-02-08T21:29:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="CreateNewContacts()[pri:0, instance:com.crmpro.TestCase.ContactsPageTest@26be92ad]" name="CreateNewContacts" duration-ms="2602" started-at="2019-02-08T21:29:39Z" finished-at="2019-02-08T21:29:42Z">
-          <exception class="java.lang.NoClassDefFoundError">
-            <message>
-              <![CDATA[org/apache/commons/collections4/ListValuedMap]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/collections4/ListValuedMap
-at com.crmpro.utils.TestUtile.readExcelfile(TestUtile.java:69)
-at com.cempro.pages.Contacts.createNewContact(Contacts.java:71)
-at com.crmpro.TestCase.ContactsPageTest.CreateNewContacts(ContactsPageTest.java:41)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.ClassNotFoundException: org.apache.commons.collections4.ListValuedMap
-at java.net.URLClassLoader.findClass(Unknown Source)
-at java.lang.ClassLoader.loadClass(Unknown Source)
-at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
-at java.lang.ClassLoader.loadClass(Unknown Source)
-... 28 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoClassDefFoundError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CreateNewContacts -->
-        <test-method status="PASS" signature="closeDown()[pri:0, instance:com.crmpro.TestCase.ContactsPageTest@26be92ad]" name="closeDown" is-config="true" duration-ms="268" started-at="2019-02-08T21:29:43Z" finished-at="2019-02-08T21:29:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crmpro.TestCase.ContactsPageTest@26be92ad]" name="setUp" is-config="true" duration-ms="14227" started-at="2019-02-08T21:29:43Z" finished-at="2019-02-08T21:29:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="varfied_CombineFormLink_IsPresent()[pri:0, instance:com.crmpro.TestCase.ContactsPageTest@26be92ad]" name="varfied_CombineFormLink_IsPresent" duration-ms="340" started-at="2019-02-08T21:29:57Z" finished-at="2019-02-08T21:29:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- varfied_CombineFormLink_IsPresent -->
-        <test-method status="PASS" signature="closeDown()[pri:0, instance:com.crmpro.TestCase.ContactsPageTest@26be92ad]" name="closeDown" is-config="true" duration-ms="281" started-at="2019-02-08T21:29:57Z" finished-at="2019-02-08T21:29:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crmpro.TestCase.ContactsPageTest@26be92ad]" name="setUp" is-config="true" duration-ms="14095" started-at="2019-02-08T21:29:58Z" finished-at="2019-02-08T21:30:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="varfied_FullSearchForm_IsPresent()[pri:0, instance:com.crmpro.TestCase.ContactsPageTest@26be92ad]" name="varfied_FullSearchForm_IsPresent" duration-ms="825" started-at="2019-02-08T21:30:12Z" finished-at="2019-02-08T21:30:13Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Full Search Form] but found []]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Full Search Form] but found []
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at org.testng.Assert.assertEquals(Assert.java:463)
-at com.crmpro.TestCase.ContactsPageTest.varfied_FullSearchForm_IsPresent(ContactsPageTest.java:62)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- varfied_FullSearchForm_IsPresent -->
-        <test-method status="PASS" signature="closeDown()[pri:0, instance:com.crmpro.TestCase.ContactsPageTest@26be92ad]" name="closeDown" is-config="true" duration-ms="251" started-at="2019-02-08T21:30:13Z" finished-at="2019-02-08T21:30:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDown -->
-      </class> <!-- com.crmpro.TestCase.ContactsPageTest -->
-    </test> <!-- CRMPRO testing feature -->
-  </suite> <!-- CRMPRO Test suite -->
+      </class> <!-- com.crmpro.TestCase.HelpPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -13,12 +13,15 @@ public class CustomListener extends BasePage implements ITestListener {
 	@Override
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
+		System.out.println("The test Start");
 		
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
+		System.out.println("The test Success");
+
 		
 	}
 
@@ -30,6 +33,8 @@ public class CustomListener extends BasePage implements ITestListener {
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
+		System.out.println("The test Skipped");
+
 		// TODO Auto-generated method stub
 		
 	}
@@ -48,6 +53,8 @@ public class CustomListener extends BasePage implements ITestListener {
 
 	@Override
 	public void onFinish(ITestContext context) {
+		System.out.println("The test finish");
+
 		// TODO Auto-generated method stub
 		
 	}

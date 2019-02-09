@@ -18,32 +18,40 @@ public CommonAction() {
 	super();
 }
 
-public void check_Link_connection(By element) throws MalformedURLException, IOException {
+public void check_Link_connection(By element) {
 	//Store all link in a set.
-	List<WebElement>linkList = driver.findElements(element);
-	System.out.println("Total link=====> "+linkList.size());
-	
-	//Store all Active link in a list.
-	List<WebElement>activeLink = new ArrayList<WebElement>();
-	//Iterate on all link and store onle active link in activeLink list.
-	for(int i=0; i<linkList.size(); i++) {
-		if(linkList.get(i).getAttribute("href")!=null &&(! linkList.get(i).getAttribute("href").contains("javascript"))) {
-			activeLink.add(linkList.get(i));
+	try {
+		List<WebElement>linkList = driver.findElements(element);
+		System.out.println("Total link=====> "+linkList.size());
+		
+		//Store all Active link in a list.
+		List<WebElement>activeLink = new ArrayList<WebElement>();
+		//Iterate on all link and store onle active link in activeLink list.
+		for(int i=0; i<linkList.size(); i++) {
+			if(linkList.get(i).getAttribute("href")!=null &&(! linkList.get(i).getAttribute("href").contains("javascript"))) {
+				activeLink.add(linkList.get(i));
+			}
 		}
-	}
-	System.out.println("Total Active link=====> "+activeLink.size());
+		System.out.println("Total Active link=====> "+activeLink.size());
+		
+		
+		//Check the connetion of all active link.
+		//Iterate on the activeLink and chect their connection.
+		for(int i=0;i<activeLink.size(); i++) {
+			HttpURLConnection connection = (HttpURLConnection) new URL(activeLink.get(i).getAttribute("href")).openConnection();
+			connection.connect();
+			String responseMessage = connection.getResponseMessage();
+			connection.disconnect();
+			System.out.println(activeLink.get(i).getAttribute("href") +" =====> "+responseMessage);
+		}
 	
-	
-	//Check the connetion of all active link.
-	//Iterate on the activeLink and chect their connection.
-	for(int i=0;i<activeLink.size(); i++) {
-		HttpURLConnection connection = (HttpURLConnection) new URL(activeLink.get(i).getAttribute("href")).openConnection();
-		connection.connect();
-		String responseMessage = connection.getResponseMessage();
-		connection.disconnect();
-		System.out.println(activeLink.get(i).getAttribute("href") +" =====> "+responseMessage);
-	}
+	}catch(MalformedURLException ex) {
+		ex.getStackTrace();
+	}catch(IOException ioEx) {
+		ioEx.getStackTrace();
 }
+}
+
 	
 	
 

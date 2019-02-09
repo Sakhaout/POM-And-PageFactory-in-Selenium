@@ -36,7 +36,7 @@ public class HomePageTest extends BasePage {
 	
 
 	@Test
-	public void printAllLink() throws IOException, InterruptedException {
+	public void printAllLink() throws InterruptedException{
 		Thread.sleep(5000);
 		HomePage_obj.allLink();
 	}

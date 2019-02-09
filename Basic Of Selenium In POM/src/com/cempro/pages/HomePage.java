@@ -54,18 +54,17 @@ public class HomePage extends BasePage{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void getTable() throws IOException {
+	public void getTable(){
 		try {
 			String before_xpath = "//*[@id=\"homebox_CALDAY\"]/table/tbody/tr[";
 			String after_path = "]/td[1]";
-			for(int i=3; i<=10;i++) {
+			for(int i=1; i<=19;i++) {
 				String date = driver.findElement(By.xpath(before_xpath+i+after_path)).getText();
 				System.out.println("Get Data: "+date);
 
 			}
 		}catch(Exception ex) {
 			ex.getStackTrace();
-			testUtile_Obj.takeScreenshot(HomePage.this.toString());
 		}
 		
 	}
@@ -81,7 +80,7 @@ public class HomePage extends BasePage{
 	
 	
 	
-	public void allLink() throws IOException {
+	public void allLink(){
 		commonAction_obj.check_Link_connection(allList);
 				
 	}

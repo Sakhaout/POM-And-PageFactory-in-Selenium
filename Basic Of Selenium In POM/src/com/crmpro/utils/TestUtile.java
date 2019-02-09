@@ -30,11 +30,15 @@ public class TestUtile extends BasePage {
 	public static int Implicitly_Wait = 10;
 	
 	//This method will take Screenshot
-	public final void takeScreenshot(String fileName) throws IOException{
+	public final void takeScreenshot(String fileName){
 		//Take screenshot by using TakesScreenshot interface and store it into file.
 		File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		//copy that screenshot to a desire location by using copyFile() method of FileUtils class.
-		FileUtils.copyFile(file, new File("C:\\Users\\Hossain Sakhaout\\Desktop\\JavaProgram\\Basic Of Selenium In POM\\Screenshot\\"+fileName +".jpg"));
+		try {
+			FileUtils.copyFile(file, new File("C:\\Users\\Hossain Sakhaout\\Desktop\\JavaProgram\\POM-And-PageFactory-in-Selenium\\Basic Of Selenium In POM\\Screenshot\\"+fileName +".jpg"));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 
 	}
 	
@@ -61,6 +65,7 @@ public class TestUtile extends BasePage {
 		// First need to create an object of FileInputStream class.
 		FileInputStream fileInput = new FileInputStream(file);
 		//Create object for an workbook of that file.
+		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(fileInput);
 		//Use XSSFSheet to get the sheet of that workbook.
 		XSSFSheet sheet = workbook.getSheet("Sheet1");

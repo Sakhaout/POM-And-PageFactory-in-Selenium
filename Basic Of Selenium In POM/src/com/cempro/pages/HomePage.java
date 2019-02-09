@@ -1,12 +1,11 @@
 package com.cempro.pages;
 
 import java.io.IOException;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.util.ArrayList;
+
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
@@ -23,14 +22,12 @@ public class HomePage extends BasePage{
 	Action action = new Action();
 	CommonAction commonAction_obj = new CommonAction();
 	
-	By allList = By.tagName("a");
+	By allList = By.tagName("li");
 	
 	@FindBy(xpath = "//td[contains(text(),'User: Hossain Sakhaout')]")
 	private WebElement userLebel;
 	
 	
-	@FindBys(@FindBy(xpath = "//*[@id='homebox_CALDAY']/table/tbody/tr[i]"))
-	List<WebElement> eventTable;
 	
 	@FindBy(xpath = "//div[@id='navMenu']//a[@title='Mail Accounts'][contains(text(),'Mail Accounts')]")
 	private WebElement mailAccount_link;
@@ -57,21 +54,29 @@ public class HomePage extends BasePage{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void getTable() {
-		for(int i=1; i<=eventTable.size();i++) {
-			String date = eventTable.get(i).getText();
-			System.out.println("Get Data: "+date);
+	public void getTable() throws IOException {
+		try {
+			String before_xpath = "//*[@id=\"homebox_CALDAY\"]/table/tbody/tr[";
+			String after_path = "]/td[1]";
+			for(int i=3; i<=10;i++) {
+				String date = driver.findElement(By.xpath(before_xpath+i+after_path)).getText();
+				System.out.println("Get Data: "+date);
 
+			}
+		}catch(Exception ex) {
+			ex.getStackTrace();
+			testUtile_Obj.takeScreenshot(HomePage.this.toString());
 		}
+		
 	}
 	
 	
 	
 		
-	public void clickOnContactsLink() {
+	public void clickOnContactsLink() throws IOException {
 		action.actionMouseHover(contactsLink);
 		combinedFrom.click();
-		//newContact.click();
+
 	}
 	
 	

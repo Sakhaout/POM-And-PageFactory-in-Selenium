@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crmpro.TestCase.HomePageTest">
+      <class name="com.crmpro.TestCase.ContactsPageTest">
         <methods>
           <include name="setUp"/>
-          <include name="printAllLink"/>
           <include name="closeDown"/>
+          <include name="CreateNewContacts"/>
+          <include name="varfied_FullSearchForm_IsPresent"/>
         </methods>
-      </class> <!-- com.crmpro.TestCase.HomePageTest -->
+      </class> <!-- com.crmpro.TestCase.ContactsPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

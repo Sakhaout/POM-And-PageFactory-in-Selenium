@@ -4,7 +4,7 @@
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="testcasae"/>
-	<classpathentry kind="lib" path="C:/Users/Hossain Sakhaout/Desktop/JavaProgram/Selenium_JarFile/Selenium/client-combined-3.141.59.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Hossain Sakhaout/Desktop/JavaProgram/Selenium_JarFile/Selenium/client-combined-3.141.59.jar" sourcepath="C:/Users/Hossain Sakhaout/Desktop/JavaProgram/Selenium_JarFile/Selenium/client-combined-3.141.59-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Hossain Sakhaout/Desktop/JavaProgram/Selenium_JarFile/Selenium/client-combined-3.141.59-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Hossain Sakhaout/Desktop/JavaProgram/Selenium_JarFile/Selenium/libs/byte-buddy-1.8.15.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Hossain Sakhaout/Desktop/JavaProgram/Selenium_JarFile/Selenium/libs/commons-exec-1.3.jar"/>

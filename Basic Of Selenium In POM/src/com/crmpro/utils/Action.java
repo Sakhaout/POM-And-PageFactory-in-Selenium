@@ -1,5 +1,7 @@
 package com.crmpro.utils;
 
+import java.io.IOException;
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -8,6 +10,8 @@ import org.openqa.selenium.support.ui.Select;
 import com.crmpro.base.BasePage;
 
 public class Action extends BasePage {
+	
+	private TestUtile testUtile_obj = new TestUtile();
 	
 	public Action() {
 		super();
@@ -22,10 +26,17 @@ public class Action extends BasePage {
 	
 	
 	//This methos perform mouse hover on webelement.
-	public void actionMouseHover(WebElement element) {
+	public void actionMouseHover(WebElement element) throws IOException {
 		//First need to creat an object of Actions class.
-		Actions action_obj = new Actions(driver);
-		action_obj.moveToElement(element).build().perform();
+		try {
+			Actions action_obj = new Actions(driver);
+			action_obj.moveToElement(element).build().perform();
+		}catch(Exception ex) {
+			ex.getStackTrace();
+			testUtile_obj.takeScreenshot(Action.this.toString());
+			
+		}
+		
 	}
 	
 	

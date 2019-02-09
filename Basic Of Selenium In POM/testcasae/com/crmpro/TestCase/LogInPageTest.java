@@ -1,16 +1,18 @@
 package com.crmpro.TestCase;
 
-import java.io.IOException;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.cempro.pages.LogInPage;
 import com.crmpro.base.BasePage;
+import com.crmpro.utils.CustomListener;
 import com.crmpro.utils.TestUtile;
 
+@Listeners(CustomListener.class)
 public class LogInPageTest extends BasePage{
 	LogInPage loginPage_Obj;
 	TestUtile testUtile_Obj;
@@ -20,25 +22,22 @@ public class LogInPageTest extends BasePage{
 	}
 
 
-	@BeforeTest
+	@BeforeMethod
 	public void setUp() {
 		initialition();
 		loginPage_Obj = new LogInPage();
-		testUtile_Obj = new TestUtile();
 	
 	}
 	
 	@Test
-	public void LogInTest() throws IOException, InterruptedException {
-		Thread.sleep(5000);
+	public void LogInTest(){
 		loginPage_Obj.logInFunction();
-		Thread.sleep(5000);
-		String title = loginPage_Obj.getTitle();
+		String title =driver.getTitle();
 		Assert.assertEquals(title , "CRMPRO");
 	}
 	
 	
-	@AfterTest
+	@AfterMethod
 	public void closeDown() {
 		driver.close();
 	}
